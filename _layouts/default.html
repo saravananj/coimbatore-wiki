@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="description" content="An Information Portal to get to know all about Coimbatore City. Suggessions are invited to make this place more informative to people.">
+
+    <title>{{ page.title }}</title>
+
+    {% include styles.html %}
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        {% include header.html %}
+
+        <div id="mainContent">
+            <div class="row">
+                <div class="col-md-9">
+                    {{ content }}
+                </div>
+                <div class="col-md-3">
+                    {% include sidebar.html %}
+                </div>
+            </div>
+        </div>
+        
+        {% include footer.html %}
+    </div>
+
+    {% include scripts.html %}
+    
+</body>
+</html>

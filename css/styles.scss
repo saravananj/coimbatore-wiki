@@ -1,0 +1,72 @@
+---
+---
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    padding: 20px 0px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: center;
+}
+
+#mainContent {
+    margin: 20px 0px;
+}
+
+footer {
+    padding-top: 15px;
+    border-top: 1px solid #DDDDDD;
+}
+
+.sidebarExternalCard,
+.sidebarAdCard {
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 1s all;
+    margin-bottom: 10px;
+}
+
+.sidebarExternalCard:hover,
+.sidebarAdCard:hover {
+    background-color: #E1E1E1;
+    transition: 1s all;
+}
+
+.sidebarExternalLink,
+.sidebarAdLink {
+    text-decoration: none !important;
+}
+
+.sidebarExternalLink .row,
+.sidebarAdLink .row {
+    padding: 10px;
+}
+
+.sidebarExternalCard .sidebarTitle,
+.sidebarAdCard .sidebarTitle {
+    color: #666666;
+    font-size: 22px;
+}
+.sidebarExternalCard .sidebarIcon,
+.sidebarAdCard .sidebarIcon {
+    color: #666666;
+    font-size: 22px;
+}
+
+#sidebarAdHeading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebarAdCard .sidebarDescription {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.sidebarAdCard .sidebarIcon-yellow {
+    color: #f4d442;
+    font-size: 34px;
+}
