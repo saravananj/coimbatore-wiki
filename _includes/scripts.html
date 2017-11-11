@@ -1,1 +1,127 @@
-<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+<script type="text/javascript">
+    if("{{ page.permalink }}" == "/articles/how-really-is-the-gandhipuram-flyover-helps-reduce-traffic-congestion") {
+        var chart_1 = document.getElementById('coimbatoreGandhipuramTwoWheeler').getContext('2d');
+        var coimbatoreGandhipuramTwoWheelerChart = new Chart(chart_1, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [178,101],
+                    backgroundColor: ["#007FFF","#27e8a1"]
+                }],
+                labels: ["Service Lane","Flyover"]
+            },
+            options: {
+                responsive: true,
+                title: { display: true, text: 'Two Wheelers' }
+            }
+        });
+        
+        var chart_2 = document.getElementById('coimbatoreGandhipuramCar').getContext('2d');
+        var coimbatoreGandhipuramCarChart = new Chart(chart_2, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [36,28],
+                    backgroundColor: ["#007FFF","#27e8a1"]
+                }],
+                labels: ["Service Lane","Flyover"]
+            },
+            options: {
+                responsive: true,
+                title: { display: true, text: 'Cars' }
+            }
+        });
+        
+        var chart_3 = document.getElementById('coimbatoreGandhipuramAuto').getContext('2d');
+        var coimbatoreGandhipuramAutoChart = new Chart(chart_3, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [7,1],
+                    backgroundColor: ["#007FFF","#27e8a1"]
+                }],
+                labels: ["Service Lane","Flyover"]
+            },
+            options: {
+                responsive: true,
+                title: { display: true, text: 'Auto' }
+            }
+        });
+        
+        var chart_4 = document.getElementById('coimbatoreGandhipuramMiniTruck').getContext('2d');
+        var coimbatoreGandhipuramMiniTruckChart = new Chart(chart_4, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [5,5],
+                    backgroundColor: ["#007FFF","#27e8a1"]
+                }],
+                labels: ["Service Lane","Flyover"]
+            },
+            options: {
+                responsive: true,
+                title: { display: true, text: 'Mini-Truck' }
+            }
+        });
+        
+        var chart_5 = document.getElementById('coimbatoreGandhipuramVan').getContext('2d');
+        var coimbatoreGandhipuramVanChart = new Chart(chart_5, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [0,1],
+                    backgroundColor: ["#007FFF","#27e8a1"]
+                }],
+                labels: ["Service Lane","Flyover"]
+            },
+            options: {
+                responsive: true,
+                title: { display: true, text: 'Van' }
+            }
+        });
+        
+        var chart_6 = document.getElementById('coimbatoreGandhipuramTempo').getContext('2d');
+        var coimbatoreGandhipuramTempoChart = new Chart(chart_6, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [3,0],
+                    backgroundColor: ["#007FFF","#27e8a1"]
+                }],
+                labels: ["Service Lane","Flyover"]
+            },
+            options: {
+                responsive: true,
+                title: { display: true, text: 'Tempo' }
+            }
+        });
+        
+        var chart_7 = document.getElementById('coimbatoreGandhipuramBus').getContext('2d');
+        var coimbatoreGandhipuramBusChart = new Chart(chart_7, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [9,0],
+                    backgroundColor: ["#007FFF","#27e8a1"]
+                }],
+                labels: ["Service Lane","Flyover"]
+            },
+            options: {
+                responsive: true,
+                title: { display: true, text: 'Bus' }
+            }
+        });
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109508540-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109508540-1');
+</script>

@@ -14,6 +14,16 @@ header {
     margin: 20px 0px;
 }
 
+.pageContent p,
+.pageContent li{
+    font-size: 1.3em;
+}
+
+.pageContent p.lowerFont,
+.pageContent li.lowerFont{
+    font-size: 1em;
+}
+
 footer {
     padding-top: 15px;
     border-top: 1px solid #DDDDDD;
@@ -70,3 +80,4 @@ footer {
     color: #f4d442;
     font-size: 34px;
 }
+
